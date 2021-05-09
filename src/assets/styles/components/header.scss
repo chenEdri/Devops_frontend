@@ -3,7 +3,7 @@
     margin-right: auto;
     height: 80px;
     text-align: center;
-    background-color:#ccc;
+    background-color:$bgc-blue;
 
     &>*{
         display: flex;
@@ -28,3 +28,7 @@
         margin-right: rem(10px);
     }
 }
+
+.active-link {
+    color: $black-blue;
+  }

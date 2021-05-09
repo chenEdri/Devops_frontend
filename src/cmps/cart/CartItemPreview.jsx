@@ -2,16 +2,16 @@ import React from "react";
 
 export function CartItemPreview({ item, addToBuyList }) {
     return (
-        <div className="card-container flex column ">
+        <div className="card-container flex column sb ">
             <div className="card-img">
                 <img src={item.imgUrl} alt="#" />
             </div>
             <div className="card-lng">
-                <div className="flex">
+                <div className="flex w50ch">
                     <div>Name:</div>
                     <div className="pl20">{item.name}</div>
                 </div>
-                <div className="flex">
+                <div className="flex mt10">
                     <div>Price:</div>
                     <div className="pl20">${item.price}</div>
                 </div>

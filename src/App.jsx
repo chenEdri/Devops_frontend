@@ -1,9 +1,9 @@
 import React, { Component } from "react"
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-import {Home} from './pages/Home.jsx';
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Home } from './pages/Home.jsx';
 import { Header } from './cmps/Header.jsx'
 import { Footer } from './cmps/Footer.jsx';
-import {ItemApp} from './pages/item/ItemApp.jsx';
+import { ItemApp } from './pages/item/ItemApp.jsx';
 import { Stats } from "./pages/Stats.jsx";
 
 export class App extends Component {
@@ -11,11 +11,14 @@ export class App extends Component {
     return (
       <div className="app">
         <Router>
-          <Header/>
+          <Header />
           <Switch>
+            <Route exact path="/">
+              <Redirect to="/admin" />
+            </Route>
+            <Route path="/home" component={Home} />
             <Route path="/admin" component={ItemApp} />
-            <Route path="/home"  component={Home}/>
-            <Route path="/Stats" component={Stats}/>
+            <Route path="/Stats" component={Stats} />
           </Switch>
         </Router>
         <Footer />

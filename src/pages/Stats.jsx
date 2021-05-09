@@ -15,7 +15,6 @@ export function Stats(props) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // dispatch(loadSales())
     loadSales()
   }, [isChange])
 
@@ -37,7 +36,7 @@ export function Stats(props) {
     setLastDaysSales(sortedByDates)
   }
 
-  if (!sales) return <div>loading...</div>
+  if (!sales) return <div className="loading-img"><img src="https://res.cloudinary.com/dygtul5wx/image/upload/v1620576631/Spinner-1s-200px_yaswuk.gif" /></div>
   return (
     <section className="main-container">
       <div className="stat-container">   
@@ -48,5 +47,6 @@ export function Stats(props) {
       </div>
     </section>
   );
+
 }
 

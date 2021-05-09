@@ -105,6 +105,9 @@
 .m10 {
   margin: rem(10px);
 }
+.mt10{
+  margin-top: 10px;
+}
 .mb50 {
   margin-bottom: rem(50px);
 }
@@ -158,6 +161,24 @@
 .brb{
   border-bottom: 1px solid rgb(198, 198, 198);
   margin-bottom: 5px;
+}
+
+//loading image
+
+.loading-img{
+  width: 400px;
+  height: 400px;
+  display: flex ;
+  justify-self: center;
+  align-self: center;
+  margin: 0px auto;
+}
+
+//character width
+
+.w50ch{
+  width: 50ch;
+  overflow: hidden;
 }
 
 

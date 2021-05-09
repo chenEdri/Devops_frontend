@@ -14,7 +14,7 @@ export function CartDash({ cartItems, clearBuyItems }) {
     return (
         <section className="cart-dash">
             {cartItems.map((item,idx) =>
-                <div className="cart-info flex sa" key={idx}>
+                <div className="cart-info flex sb" key={idx}>
                     <div>{item.name}</div>
                     <div>${item.price}</div>
                 </div>

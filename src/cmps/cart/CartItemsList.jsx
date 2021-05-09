@@ -3,7 +3,7 @@ import {CartItemPreview} from './CartItemPreview';
 
 export function CartItemList({cartItems, addToBuyList}){
     return(
-        <section className= "card-grid ">
+        <section className= "cart-grid ">
         {
             cartItems.map(item=>
            <CartItemPreview item={ item } 

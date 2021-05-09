@@ -1,7 +1,9 @@
 .cart-dash {
-  background-color: #80b2c4ad;
+  background-color: $bgc-blue;
+  color:$w;
   font-weight: 600;
-  position: absolute;
+  position: fixed;
+  right:200px;
   width: 300px;
   z-index: 4;
   .cart-info {
@@ -17,13 +19,18 @@
     }
   }
 }
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
 .shopping-cart {
   border-bottom: 0.6px solid rgba(204, 204, 204, 0.596);
   font-weight: 500;
   font-variant-caps: all-small-caps;
   padding: 10px 10px 0px 10px;
   cursor: pointer;
-  span{
+  span {
     font-weight: bold;
     font-variant-caps: all-small-caps;
     padding: 8px;

@@ -4,6 +4,10 @@
 
 .link, a{
     text-decoration-line: none;
-    color: #222222;
+    color: $w;
     font-weight: 500;
+    &:hover{
+        color:$clr4;
+        transition: 0.7s;
+    }
 }
