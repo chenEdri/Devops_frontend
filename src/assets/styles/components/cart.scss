@@ -1,0 +1,32 @@
+.cart-dash {
+  background-color: #80b2c4ad;
+  font-weight: 600;
+  position: absolute;
+  width: 300px;
+  z-index: 4;
+  .cart-info {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .cart-payment {
+    margin-top: 13px;
+    justify-content: center;
+    align-items: center;
+    span {
+      padding-right: 5px;
+    }
+  }
+}
+.shopping-cart {
+  border-bottom: 0.6px solid rgba(204, 204, 204, 0.596);
+  font-weight: 500;
+  font-variant-caps: all-small-caps;
+  padding: 10px 10px 0px 10px;
+  cursor: pointer;
+  span{
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    padding: 8px;
+    border-radius: 10px;
+  }
+}
