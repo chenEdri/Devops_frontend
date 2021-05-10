@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chenedri.github.io/Devops_frontend/", 
+  "homepage": "https://calm-scrubland-62723.herokuapp.com/", 
   "dependencies": {
     "-": "0.0.1",
     "@material-ui/core": "^4.11.0",
